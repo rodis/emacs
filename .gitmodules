@@ -1,0 +1,3 @@
+[submodule "vendor/popwin"]
+	path = vendor/popwin
+	url = https://github.com/emacsmirror/popwin.git
