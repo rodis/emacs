@@ -1,3 +1,6 @@
 [submodule "vendor/popwin"]
 	path = vendor/popwin
 	url = https://github.com/emacsmirror/popwin.git
+[submodule "workgroups.el"]
+	path = workgroups.el
+	url = https://github.com/tlh/workgroups.el.git
