@@ -1,0 +1,15 @@
+;; rds-python-init.el --- Some helpful Python code
+
+
+(require 'rds-python-setup)
+(require 'rds-python-checker)
+(require 'rds-python-lookup)
+(require 'rds-python-completion)
+(require 'rds-python-defun)
+(require 'rds-python-bindings)
+;; (require 'rds-python-ipython)
+(require 'rds-python-popwin)
+(require 'virtualenv)
+
+
+(provide 'rds-python-init)

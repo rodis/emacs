@@ -1,0 +1,480 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Dec 10 01:48:50 2011
+;; Desktop file format version 206
+;; Emacs version 23.1.50.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("next" "dedicated" "notify" "work" "ido sa"))
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "      ;; (dotimes (i arg)")))
+(setq file-name-history '("~/.emacs.d/local/term/screen-256color.el" "~/.emacs.d/local/term/rds-screen-256color.el" "/home/rods/.emacs.d/local/rds-key-chord.el" "/home/rods/.emacs.d/el-get/anything/anything.el" "/home/rods/.emacs.d/system-dirs/breeze/bookmarks" "/home/rods/.emacs.d/vendor/workgroups/workgroups.el" "/home/rods/.emacs.d/el-get/multi-term/multi-term.el" "/home/rods/.backups/home/rods/.emacs.d/local/rds-extra.el-2011_10_16_00_20_36" "/home/rods/.backups/home/rods/.emacs.d/local/rds-extra.el-2011_10_26_17_18_29" "~/.emacs.d/local/rds-org.el" "/home/rods/.emacs.d/local/rds-programming.el" "/home/rods/.emacs.d/local/rds-term.el" "/home/rods/.emacs.d/local/rds-backup-each-save.el" "~/.emacs.d/el-get/backup-each-save/backup-each-save.el" "/home/rods/.emacs.d/el-get/anything/anything-config.el" "/home/rods/.emacs.d/vendor/pylint.el" "/home/rods/Documents/org/notes.org" "~/.emacs.d/el-get/dired+/dired+.el" "/home/rods/.emacs.d/vendor/flymake-python/pyflymake.py" "/home/rods/.emacs.d/Note.txt" "/home/rods/.emacs.d/init.el" "/home/rods/.emacs.d/local/rds-init.el" "~/.emacs.d/" "~/.emacs.d/local/rds-defuns.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/system-dirs/green/green.el"
+  "green.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  171
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-misc.el"
+  "rds-misc.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  73
+  '(2523 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-init.el"
+  "rds-init.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  611
+  '(648 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "local"
+  'dired-mode
+  '(global-auto-revert-mode workgroups-mode dired-omit-mode)
+  2297
+  '(nil nil)
+  t
+  '("/home/rods/.emacs.d/local/")
+  nil)
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-defuns.el"
+  "rds-defuns.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  5132
+  '(1282 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-key-chord.el"
+  "rds-key-chord.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  77
+  '(48 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-bindings.el"
+  "rds-bindings.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  286
+  '(114 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-comint.el"
+  "rds-comint.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  360
+  '(305 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-extra.el"
+  "rds-extra.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1232
+  '(47 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-paths.el"
+  "rds-paths.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1119
+  '(392 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  675
+  '(1129 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-el-get.el"
+  "rds-el-get.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1960
+  '(1727 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-term.el"
+  "rds-term.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1619
+  '(662 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-escreen.el"
+  "rds-escreen.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-ibuffer.el"
+  "rds-ibuffer.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1607
+  '(1159 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-org.el"
+  "rds-org.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1718
+  '(1284 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-programming.el"
+  "rds-programming.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  617
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-backup-each-save.el"
+  "rds-backup-each-save.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  667
+  '(642 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  ".svn"
+  'dired-mode
+  '(global-auto-revert-mode workgroups-mode dired-omit-mode)
+  187
+  '(nil nil)
+  t
+  '("/home/rods/.emacs.d/local/rds-python/.svn/")
+  nil)
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-anything.el"
+  "rds-anything.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-autocomplete.el"
+  "rds-autocomplete.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-autosave.el"
+  "rds-autosave.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-colortheme.el"
+  "rds-colortheme.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-dired.el"
+  "rds-dired.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-eproject.el"
+  "rds-eproject.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-eshell.el"
+  "rds-eshell.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-ido.el"
+  "rds-ido.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-javascript.el"
+  "rds-javascript.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-osx.el"
+  "rds-osx.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-recentf.el"
+  "rds-recentf.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-uniquify.el"
+  "rds-uniquify.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-w3m.el"
+  "rds-w3m.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-yasnippet.el"
+  "rds-yasnippet.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-bindings.el"
+  "rds-python-bindings.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-checker.el"
+  "rds-python-checker.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-completion.el"
+  "rds-python-completion.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-defun.el"
+  "rds-python-defun.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-init.el"
+  "rds-python-init.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-ipython.el"
+  "rds-python-ipython.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-lookup.el"
+  "rds-python-lookup.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-popwin.el"
+  "rds-python-popwin.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/rods/.emacs.d/local/rds-python/rds-python-setup.el"
+  "rds-python-setup.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode yas/minor-mode auto-complete-mode workgroups-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+

@@ -1,0 +1,42 @@
+;; ;; enable pylint
+(load-library "pylint")
+
+
+;;enable pyflakes on the fly
+(add-hook 'find-file-hook 'flymake-find-file-hook)
+(when (load "flymake" t)
+  (defun flymake-pyflakes-init ()
+    (let* ((temp-file (flymake-init-create-temp-buffer-copy
+               'flymake-create-temp-inplace))
+       (local-file (file-relative-name
+            temp-file
+            (file-name-directory buffer-file-name))))
+      (list "~/.emacs.d/python-bin/pycheckers"  (list local-file))))
+   (add-to-list 'flymake-allowed-file-name-masks
+             '("\\.py\\'" flymake-pyflakes-init)))
+
+(load-library "flymake-cursor")
+
+
+;;(load "flymake")
+;;(load "~/.emacs.d/vendor/flymake-python/dotemacs")
+
+;;  (when (load "flymake" t)
+;;   (defun flymake-pylint-init (&optional trigger-type)
+;;     (let* ((temp-file (flymake-init-create-temp-buffer-copy
+;;  		       'flymake-create-temp-inplace))
+;;  	   (local-file (file-relative-name
+;;  			temp-file
+;; 			(file-name-directory buffer-file-name)))
+;;  	   (options (when trigger-type (list "--trigger-type" trigger-type))))
+;;       (list "~/.emacs.d/vendor/flymake-python/pyflymake.py" (append options (list local-file)))))
+
+;;   (add-to-list 'flymake-allowed-file-name-masks
+;;  	       '("\\.py\\'" flymake-pylint-init)))
+
+;; (add-hook 'find-file-hook 'flymake-find-file-hook)
+
+;; (load-library "flymake-cursor")
+
+
+(provide 'rds-python-checker)

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python
+END
+rds-python-popwin.el
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-popwin.el
+END
+rds-python-bindings.el
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-bindings.el
+END
+rds-python-setup.el
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-setup.el
+END
+rds-python-defun.el
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-defun.el
+END
+rds-python-init.el
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-init.el
+END
+rds-python-checker.el
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-checker.el
+END
+rds-python-completion.el
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-completion.el
+END
+rds-python-lookup.el
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-lookup.el
+END
+rds-python-ipython.el
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-python/rds-python-ipython.el
+END

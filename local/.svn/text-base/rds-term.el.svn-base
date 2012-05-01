@@ -1,0 +1,93 @@
+(require 'term)
+
+(defun multi-term-list ()
+  "List term buffers presently active."
+  ;; Autload command `remove-if-not'.
+  (autoload 'remove-if-not "cl-seq")
+  (sort 
+   (remove-if-not (lambda (b)
+                    (setq case-fold-search t)
+                    (string-match
+                     (format "^\\\*[a-zA-Z-]*[[:blank:]]?%s<[0-9]+>\\\*$" 
+                             multi-term-buffer-name)
+                     (buffer-name b)))
+                  (buffer-list))
+   (lambda (a b)
+     (< (string-to-number
+         (cadr (split-string (buffer-name a) "[<>]")))
+        (string-to-number
+         (cadr (split-string (buffer-name b) "[<>]")))))))
+
+
+(defun rds-multi-term-next (&optional offset)
+  "Go to the next term buffer.
+If OFFSET is `non-nil', will goto next term buffer with OFFSET."
+  (interactive "P")
+  (let* ((window (selected-window))
+         (dedicated (window-dedicated-p window)))
+    (if dedicated
+        (progn
+          (set-window-dedicated-p window nil)
+          (multi-term-switch 'NEXT (or offset 1))
+          (set-window-dedicated-p window t))
+      (multi-term-switch 'NEXT (or offset 1)))))
+
+(defun rds-multi-term-prev (&optional offset)
+  "Go to the next term buffer.
+If OFFSET is `non-nil', will goto previous term buffer with OFFSET."
+  (interactive "P")
+  (let* ((window (selected-window))
+         (dedicated (window-dedicated-p window)))
+    (if dedicated
+        (progn
+          (set-window-dedicated-p window nil)
+          (multi-term-switch 'PREVIOUS (or offset 1))
+          (set-window-dedicated-p window t))
+      (multi-term-switch 'PREVIOUS (or offset 1)))))
+
+;; http://emacs-journey.blogspot.com/2011/02/proper-ansi-term-yankpaste.html
+(defun my-term-paste (&optional string)
+  (interactive)
+  (process-send-string
+   (get-buffer-process (current-buffer))
+   (if string string (current-kill 0))))
+
+(setq multi-term-buffer-name "t")
+(setq multi-term-program "/bin/bash")
+(setq term-unbind-key-list '("C-z" "C-x" "C-c" "C-h" "C-y" "<ESC>"))
+(setq
+ term-bind-key-alist
+ '(("C-c C-c" . term-interrupt-subjob)
+   ("C-p" . previous-line)
+   ("C-n" . next-line)
+   ("C-s" . isearch-forward)
+   ;; ("C-r" . isearch-backward)
+   ("C-r" . term-send-raw)
+   ("C-m" . term-send-raw)
+   ("M-f" . term-send-forward-word)
+   ("M-b" . term-send-backward-word)
+   ("M-o" . term-send-backspace)
+   ("M-p" . term-send-up)
+   ("M-n" . term-send-down)
+   ("M-M" . term-send-forward-kill-word)
+   ("M-N" . term-send-backward-kill-word)
+   ("M-r" . term-send-reverse-search-history)
+   ("M-," . term-send-input)
+   ("M-." . comint-dynamic-complete)
+))
+
+
+(add-hook 'term-mode-hook
+          '(lambda () 
+             (define-key term-raw-map (kbd "M-[") 'rds-multi-term-prev)
+             (define-key term-raw-map (kbd "M-]") 'rds-multi-term-next)
+             (define-key term-raw-map (kbd "C-y") 'my-term-paste)
+))
+
+
+;; only needed if you use autopair
+;; (add-hook 'term-mode-hook
+;;   #'(lambda () (setq autopair-dont-activate t)))
+
+
+(provide 'rds-term)

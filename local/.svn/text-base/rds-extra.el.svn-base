@@ -1,0 +1,91 @@
+;;; rds-extra --- New features under testing
+
+
+(require 'desktop)
+(desktop-save-mode 1)
+(setq desktop-save (quote if-exists))
+(setq desktop-base-file-name "emacs-desktop")
+(setq desktop-path '("." "~/.emacs.d/"))
+(setq desktop-clear-preserve-buffers 
+      (quote 
+       ("\\*scratch\\*"
+        "\\*Messages\\*"
+        "\\*server\\*"
+        "\\*tramp/.+\\*" 
+        "\\*terminal\\*"
+        "^.*\\*w3m\\*\\(<[0-9]*>\\)?$"
+        "^\\\*[a-zA-Z-]*[[:blank:]]?t<[0-9]+>\\\*$"
+)))
+
+;; ----------------------------------------------------
+(require 'workgroups)
+(setq wg-morph-on nil)
+(setq wg-use-faces t)
+(setq wg-emacs-exit-save-behavior nil)
+(setq wg-prefix-key (kbd "C-c w"))
+(setq wg-switch-to-first-workgroup-on-find-session-file nil)
+(setq wg-mode-line-display-on nil)
+(setq wg-workgroups-mode-exit-save-behavior nil)
+(workgroups-mode t)
+
+;;-----------------------------------------------------
+;; (defun ash-term-hooks ()
+;;   ;; yank in term (bound to C-c C-y)
+;;   (define-key term-raw-escape-map "\C-y"
+;;     (lambda ()
+;;        (interactive)
+;;        (term-send-raw-string (current-kill 0))))
+;;   (setq term-default-bg-color (face-background 'default))
+;;   (setq term-default-fg-color (face-foreground 'default))
+;; )
+
+;; (add-hook 'term-mode-hook 'ash-term-hooks)
+
+;;----------------------------------------------
+
+;; (add-hook 'after-init-hook 'server-start)
+(defun geometry ()
+  (escreen-create-screen)
+  (escreen-create-screen)
+  (escreen-create-screen)
+  (escreen-goto-screen-0)
+  (multi-term)
+  (rename-buffer "*main t<1>*")
+  (escreen-goto-screen-1)
+  (multi-term)
+  (rename-buffer (format "*%s t<2>*" system-name))
+  (multi-term)
+  (rename-buffer "*orange t<3>*")
+)
+
+(add-hook 'after-init-hook 'geometry)
+
+;; ----------------------------------------------------
+;; save a bunch of variables to the desktop file
+;; for lists specify the len of the maximal saved data also
+
+;; (setq desktop-globals-to-save
+;;       (append '((extended-command-history . 30)
+;;                 (file-name-history        . 100)
+;;                 (grep-history             . 30)
+;;                 (compile-history          . 30)
+;;                 (minibuffer-history       . 50)
+;;                 (query-replace-history    . 60)
+;;                 (read-expression-history  . 60)
+;;                 (regexp-history           . 60)
+;;                 (regexp-search-ring       . 20)
+;;                 (search-ring              . 20)
+;;                 (shell-command-history    . 50)
+;;                 tags-file-name
+;;                 register-alist)))
+
+;; ----------------------------------------------------
+(setq bookmark-default-file (expand-file-name "bookmarks" system-specific-dir))
+
+;; ----------------------------------------------------
+(require 'magit)
+
+;; ----------------------------------------------------
+(cua-mode)
+
+(provide 'rds-extra)

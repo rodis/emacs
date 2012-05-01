@@ -1,0 +1,41 @@
+;;; rds-paths.el --- Load all custom library
+
+(require 'rds-el-get)
+(require 'rds-misc)
+(require 'rds-defuns)
+(require 'rds-bindings)
+(require 'rds-autosave)
+(require 'rds-recentf)
+(require 'rds-eshell)
+(require 'rds-ido)
+(require 'rds-yasnippet)
+(require 'rds-autocomplete)
+(require 'rds-dired)
+(require 'rds-w3m)
+(require 'rds-uniquify)
+(require 'rds-escreen)
+;; (require 'rds-colortheme)
+(require 'rds-anything)
+(require 'rds-backup-each-save.el)
+(require 'rds-term)
+(require 'rds-comint)
+(require 'rds-diminish)
+(require 'rds-org)
+(require 'rds-ibuffer)
+(require 'rds-key-chord)
+(require 'rds-programming)
+
+(require 'rds-extra)
+
+(cond ((eq system-type 'darwin)
+       (require 'rds-osx)))
+
+;; ----------------------------------------------------------------------------
+;; Allow access from emacsclient
+;; ----------------------------------------------------------------------------
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+
+(provide 'rds-init)

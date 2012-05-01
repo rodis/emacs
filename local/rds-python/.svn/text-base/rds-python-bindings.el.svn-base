@@ -1,0 +1,8 @@
+(add-hook 'python-mode-hook
+          #'(lambda ()
+              (define-key py-mode-map (kbd "C-c C-t") 'add-trace)
+              (define-key py-mode-map (kbd "C-c C-a") 'py-snippet-attribute)
+))
+
+
+(provide 'rds-python-bindings)

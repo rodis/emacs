@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local
+END
+rds-bindings.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-bindings.el
+END
+rds-w3m.el
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-w3m.el
+END
+rds-uniquify.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-uniquify.el
+END
+rds-eproject.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-eproject.el
+END
+rds-el-get.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-el-get.el
+END
+.emacs.desktop.lock
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/.emacs.desktop.lock
+END
+rds-anything.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-anything.el
+END
+setup.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/setup.lisp
+END
+rds-programming.el
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-programming.el
+END
+rds-ibuffer.el
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-ibuffer.el
+END
+rds-extra.el
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-extra.el
+END
+rds-defuns.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-defuns.el
+END
+rds-autosave.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-autosave.el
+END
+rds-misc.el
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-misc.el
+END
+rds-backup-each-save.el
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-backup-each-save.el
+END
+rds-autocomplete.el
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-autocomplete.el
+END
+rds-colortheme.el
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-colortheme.el
+END
+rds-init.el
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-init.el
+END
+rds-diminish.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-diminish.el
+END
+rds-javascript.el
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-javascript.el
+END
+rds-term.el
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-term.el
+END
+rds-osx.el
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-osx.el
+END
+emacs-desktop
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/emacs-desktop
+END
+rds-ido.el
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-ido.el
+END
+rds-eshell.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-eshell.el
+END
+rds-yasnippet.el
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-yasnippet.el
+END
+rds-paths.el
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-paths.el
+END
+rds-escreen.el
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-escreen.el
+END
+rds-key-chord.el
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-key-chord.el
+END
+rds-recentf.el
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-recentf.el
+END
+rds-dired.el
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-dired.el
+END
+rds-org.el
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-org.el
+END
+rds-comint.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/emacs/!svn/ver/122/branches/no-multi-term/emacs/local/rds-comint.el
+END
