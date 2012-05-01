@@ -1,0 +1,27 @@
+# Folders #
+###########
+auto-save-list/
+el-get/
+cache/
+server/
+tmp/
+url/
+
+# File #
+########
+.erc-auth.el
+.jabber-auth.el
+.org-id-locations
+tramp
+
+# Extension #
+#############
+*.py[cod]
+*.elc
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
