@@ -1,4 +1,4 @@
-;;; rds-paths.el --- Load all custom library
+;;; rds-init.el --- Load all custom library
 
 (require 'rds-el-get)
 (require 'rds-misc)
