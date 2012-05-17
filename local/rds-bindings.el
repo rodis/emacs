@@ -55,4 +55,10 @@
 (global-set-key [?\s-4] 'wg-switch-to-workgroup-at-index-4)
 (global-set-key [?\s-5] 'wg-switch-to-workgroup-at-index-5)
 
+(global-unset-key [left])
+(global-unset-key [up])
+(global-unset-key [right])
+(global-unset-key [down])
+
+
 (provide 'rds-bindings)
