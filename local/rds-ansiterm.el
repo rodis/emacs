@@ -39,4 +39,14 @@
    (if string string (current-kill 0))))
 
 
+;; set tango palette colors
+(require 'ansi-color)
+(setq ansi-color-names-vector
+      (vector (frame-parameter nil 'background-color)
+              "#000000" "#CC0000" "#4E9A06" "#C4A000"
+              "#3465A4" "#75507B" "#06989A" "#FFFFFF")
+      ansi-term-color-vector ansi-color-names-vector
+      ansi-color-map (ansi-color-make-color-map))
+
+
 (provide 'rds-ansiterm)
