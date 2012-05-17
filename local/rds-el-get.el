@@ -111,26 +111,24 @@
          :type http
          :url "https://raw.github.com/leoncamel/emacs-utils/5b345e163f026070fa6014171f7b83f80faf484d/win-switch/win-switch.el")
 
-(:name color-theme-solarized
-       :description "Emacs highlighting using Ethan Schoonover's Solarized color scheme"
-       :type github
-       :pkgname "sellout/emacs-color-theme-solarized"
-       :depends color-theme
-       ;; :prepare (progn
-       ;;            (add-to-list 'custom-theme-load-path default-directory)
-       ;;            (autoload 'color-theme-solarized-light "color-theme-solarized"
-       ;;              "color-theme: solarized-light" t)
-       ;;            (autoload 'color-theme-solarized-dark "color-theme-solarized"
-       ;;              "color-theme: solarized-dark" t))
-)
+  (:name color-theme-solarized
+         :description "Emacs highlighting using Ethan Schoonover's Solarized color scheme"
+         :type github
+         :pkgname "sellout/emacs-color-theme-solarized"
+         :depends color-theme
+         :prepare (progn
+                    (autoload 'color-theme-solarized-light 
+                      "color-theme-solarized"
+                      "color-theme: solarized-light" t)
+                    (autoload 'color-theme-solarized-dark 
+                      "color-theme-solarized"
+                      "color-theme: solarized-dark" t)))
 
 ))
 
 (setq my-packages
       (append
        '(
-         color-theme
-         ;; color-theme-solarized
          el-get
          switch-window
          diminish

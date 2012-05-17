@@ -1,6 +1,7 @@
 ;;; rds-init.el --- Load all custom library
 
 (require 'rds-el-get)
+(require 'rds-colortheme)
 (require 'rds-misc)
 (require 'rds-defuns)
 (require 'rds-autosave)

@@ -87,7 +87,7 @@
 (load custom-file 'noerror)
 
 ;; customize fringe color
-(set-face-background 'fringe "white")
+;; (set-face-background 'fringe "white")
 
 ;; whenever an external process changes a file underneath emacs, and there
 ;; was no unsaved changes in the corresponding buffer, just revert its
