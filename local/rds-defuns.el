@@ -178,5 +178,18 @@ original" (interactive)
                       (if (frame-parameter nil 'fullscreen)
                           nil 'fullboth)))
 
+(defun my-frame ()
+  (interactive)
+  (make-frame '((iconName . "zerof - "))))
+
+(defun sync-frames ()
+  "Make two frames show the same thing"
+  (interactive)
+  (let ((buf (current-buffer)))
+    (setq start (window-start))
+    (select-frame (next-frame nil nil))
+    (switch-to-buffer buf)
+    (set-window-start (selected-window) start t)))
+
 
 (provide 'rds-defuns)
