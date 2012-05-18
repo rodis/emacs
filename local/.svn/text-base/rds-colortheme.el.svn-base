@@ -1,8 +1,0 @@
-(require 'color-theme)
-(require 'color-theme-subdued)
-
-(color-theme-initialize)
-;; (color-theme-subdued)
-
-
-(provide 'rds-colortheme)
