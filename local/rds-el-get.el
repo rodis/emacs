@@ -18,15 +18,6 @@
          :after (lambda () 
                   (global-set-key (kbd "C-x C-z") 'magit-status)))
 
-  ;; (:name emacs-w3m
-  ;;        :description "A simple Emacs interface to w3m"
-  ;;        :type emacsmirror
-  ;;        :url "https://github.com/emacsmirror/w3m.git"
-  ;;        :build `("autoconf" ("./configure" ,
-  ;;                             (concat "--with-emacs=" el-get-emacs)) "make")
-  ;;        :build/windows-nt ("sh /usr/bin/autoconf" "sh ./configure" "make")
-  ;;        :info "doc")
-
   (:name backup-each-save
          :description "Backup each savepoint of a file"
          :type emacswiki
@@ -112,7 +103,8 @@
          :url "https://raw.github.com/leoncamel/emacs-utils/5b345e163f026070fa6014171f7b83f80faf484d/win-switch/win-switch.el")
 
   (:name color-theme-solarized
-         :description "Emacs highlighting using Ethan Schoonover's Solarized color scheme"
+         :description "\Emacs highlighting using Ethan Schoonover's Solarized 
+                       color scheme"
          :type github
          :pkgname "sellout/emacs-color-theme-solarized"
          :depends color-theme
@@ -123,18 +115,15 @@
                     (autoload 'color-theme-solarized-dark 
                       "color-theme-solarized"
                       "color-theme: solarized-dark" t)))
-
 ))
 
 (setq my-packages
       (append
        '(
          el-get
-         switch-window
          diminish
          org-mode
          dired+
-         ;; escreen
          anything
          go-mode
          magit
