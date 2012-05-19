@@ -16,6 +16,7 @@ tramp
 revision_list.txt
 .emacs.desktop.lock
 emacs-desktop
+rds-extra.el
 
 # Extension #
 #############
