@@ -63,11 +63,6 @@
          :url "git://github.com/tlh/workgroups.el.git"
          :branch "experimental")
 
-  (:name smart-operator
-         :description ""
-         :type http
-         :url "https://raw.github.com/xwl/xwl-elisp/master/smart-operator.el")
-
   (:name protbuf
          :description "Protect buffers from accidental killing"
          :type emacswiki
@@ -115,6 +110,11 @@
                     (autoload 'color-theme-solarized-dark 
                       "color-theme-solarized"
                       "color-theme: solarized-dark" t)))
+
+  (:name autopair
+         :description "Automagically pair braces and quotes"
+         :type github
+         :pkgname "m2ym/autopair-el")
 ))
 
 (setq my-packages
