@@ -8,7 +8,5 @@
 (require 'rds-python-bindings)
 (require 'rds-python-editing)
 
-(require 'smart-operator)
-(require 'open-next-line)
 
 (provide 'rds-python-init)
