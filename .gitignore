@@ -13,6 +13,9 @@ url/
 .jabber-auth.el
 .org-id-locations
 tramp
+revision_list.txt
+.emacs.desktop.lock
+emacs-desktop
 
 # Extension #
 #############
