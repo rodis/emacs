@@ -21,17 +21,13 @@
   (:name backup-each-save
          :description "Backup each savepoint of a file"
          :type emacswiki
-         :url "http://www.emacswiki.org/emacs-de/download/backup-each-save.el")
+         ;; :url "http://www.emacswiki.org/emacs-de/download/backup-each-save.el"
+         :website "http://www.emacswiki.org/emacs/BackupEachSave")
   
   (:name key-chord
          :description "Map pairs of simultaneously pressed keys to commands"
          :type emacswiki
          :url "http://www.emacswiki.org/emacs/download/key-chord.el")
-
-  (:name popwin
-         :description "Popup window manager "
-         :type emacsmirror
-         :url "https://github.com/emacsmirror/popwin.git")
 
   (:name notify
          :description "Notification manager"
@@ -77,11 +73,6 @@
          :type http
          :url "https://raw.github.com/gabrielelanaro/emacs-for-python/master/extensions/open-next-line.el")
 
-  (:name goto-last-change
-         :description ""
-         :type emacswiki
-         :url "http://www.emacswiki.org/cgi-bin/wiki/download/goto-last-change.el")
-
   (:name jabber
          :description "Instant messaging system"
          :type git
@@ -115,21 +106,6 @@
          :description "Automagically pair braces and quotes"
          :type github
          :pkgname "m2ym/autopair-el")
-
-  (:name popup
-         :description "Visual Popup Interface Library for Emacs"
-         :type github
-         :pkgname "m2ym/popup-el")
-
-  (:name fuzzy
-         :description "Fuzzy matching utilities for GNU Emacs"
-         :type github
-         :pkgname "m2ym/fuzzy-el")
-  
-  (:name autocomplete
-         :description "Emacs auto-complete package"
-         :type github
-         :pkgname "m2ym/auto-complete")
 ))
 
 (setq my-packages
@@ -140,6 +116,9 @@
          org-mode
          dired+
          anything
+         popwin
+         auto-complete
+         goto-last-change
          go-mode
          magit
          erc-highlight-nicknames
