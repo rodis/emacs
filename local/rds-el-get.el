@@ -115,6 +115,21 @@
          :description "Automagically pair braces and quotes"
          :type github
          :pkgname "m2ym/autopair-el")
+
+  (:name popup
+         :description "Visual Popup Interface Library for Emacs"
+         :type github
+         :pkgname "m2ym/popup-el")
+
+  (:name fuzzy
+         :description "Fuzzy matching utilities for GNU Emacs"
+         :type github
+         :pkgname "m2ym/fuzzy-el")
+  
+  (:name autocomplete
+         :description "Emacs auto-complete package"
+         :type github
+         :pkgname "m2ym/auto-complete")
 ))
 
 (setq my-packages
