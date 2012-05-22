@@ -99,4 +99,8 @@
 
 (setq-default display-buffer-reuse-frames t)
 
+(setq recentf-save-file (concat cache-dir "/recentf" ))
+
+(setq auto-save-list-file-prefix (concat cache-dir "/auto-save-list/saves-" ))
+
 (provide 'rds-misc)

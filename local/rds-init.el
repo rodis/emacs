@@ -4,14 +4,10 @@
 (require 'rds-colortheme)
 (require 'rds-misc)
 (require 'rds-defuns)
-(require 'rds-autosave)
-(require 'rds-recentf)
 (require 'rds-ido)
 (require 'rds-yasnippet)
 (require 'rds-autocomplete)
 (require 'rds-dired)
-;; (require 'rds-w3m)
-;; (require 'rds-escreen)
 (require 'rds-win-switch)
 (require 'rds-desktop)
 (require 'rds-workgroups)
@@ -28,7 +24,7 @@
 (require 'rds-programming)
 (require 'rds-bindings)
 (require 'rds-erc)
-(require 'rds-jabber)
+;; (require 'rds-jabber)
 (require 'open-next-line)
 
 
