@@ -73,11 +73,6 @@
          :type http
          :url "https://raw.github.com/gabrielelanaro/emacs-for-python/master/extensions/open-next-line.el")
 
-  (:name jabber
-         :description "Instant messaging system"
-         :type git
-         :url "git://emacs-jabber.git.sourceforge.net/gitroot/emacs-jabber/emacs-jabber")
-
   (:name flymake
          :description "Continuous syntax checking for Emacs"
          :type git
