@@ -20,19 +20,15 @@
 
   (:name backup-each-save
          :description "Backup each savepoint of a file"
-         :type emacswiki
-         ;; :url "http://www.emacswiki.org/emacs-de/download/backup-each-save.el"
-         :website "http://www.emacswiki.org/emacs/BackupEachSave")
+         :type emacswiki)
   
   (:name key-chord
          :description "Map pairs of simultaneously pressed keys to commands"
-         :type emacswiki
-         :url "http://www.emacswiki.org/emacs/download/key-chord.el")
+         :type emacswiki)
 
   (:name notify
          :description "Notification manager"
          :type emacswiki
-         :url "http://www.emacswiki.org/emacs/download/notify.el"
          :compile nil)
   
   (:name python-mode
@@ -48,15 +44,15 @@
                (add-to-list 'interpreter-mode-alist '("python" . python-mode))
                (autoload 'python-mode "python-mode" "Python editing mode." t)))
 
-  (:name bash-completion
+  (:name emacs-bash-completion
          :description "Dynamic completion hooks for shell-mode "
-         :type emacsmirror
-         :url "https://github.com/emacsmirror/bash-completion.git")
+         :type github
+         :pkgname "szermatt/emacs-bash-completion")
 
   (:name workgroups
          :description "Window managment for emacs"
-         :type git
-         :url "git://github.com/tlh/workgroups.el.git"
+         :type github
+         :pkgname "tlh/workgroups.el"
          :branch "experimental")
 
   (:name protbuf
@@ -64,8 +60,7 @@
          :type emacswiki
          :url "http://www.emacswiki.org/emacs/download/ProtBuf"
          :build `(,(concat "mv " 
-                          (expand-file-name "protbuf/ProtBuf" el-get-dir)
-                          " "
+                          (expand-file-name "protbuf/ProtBuf" el-get-dir) " "
                           (expand-file-name "protbuf/protbuf.el" el-get-dir))))
 
   (:name open-next-line
@@ -75,8 +70,8 @@
 
   (:name flymake
          :description "Continuous syntax checking for Emacs"
-         :type git
-         :url "git://github.com/illusori/emacs-flymake.git")
+         :type github
+         :pkgname "illusori/emacs-flymake")
 
   (:name win-switch
          :description "Navigating Emacs windows"
@@ -101,6 +96,13 @@
          :description "Automagically pair braces and quotes"
          :type github
          :pkgname "m2ym/autopair-el")
+
+  (:name deft
+         :features ())
+
+  (:name go-mode
+         :features ())
+
 ))
 
 (setq my-packages
@@ -115,10 +117,7 @@
          auto-complete
          goto-last-change
          go-mode
-         magit
-         erc-highlight-nicknames
          js2-mode
-         deft
          )
 
        (mapcar 'el-get-source-name el-get-sources)))

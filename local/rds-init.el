@@ -23,8 +23,6 @@
 (require 'rds-key-chord)
 (require 'rds-programming)
 (require 'rds-bindings)
-(require 'rds-erc)
-;; (require 'rds-jabber)
 (require 'open-next-line)
 
 
