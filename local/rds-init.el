@@ -13,20 +13,21 @@
 (require 'rds-workgroups)
 (require 'rds-uniquify)
 (require 'rds-popwin)
-(require 'rds-anything)
+(require 'rds-helm)
+(require 'rds-flycheck)
+(require 'rds-powerline)
 (require 'rds-backup-each-save.el)
-(require 'rds-comint)
 (require 'rds-ansiterm)
 (require 'rds-diminish)
-(require 'rds-org)
 (require 'rds-ibuffer)
-(require 'rds-key-chord)
 (require 'rds-programming)
 (require 'rds-bindings)
-(require 'open-next-line)
+(require 'rds-expand-region)
 
 
-(require 'rds-extra)
+(setq custom-file 
+      (expand-file-name "rds-custom.el" local-dir))
+(load custom-file 'noerror)
 
 (cond ((eq system-type 'darwin)
        (require 'rds-osx)))

@@ -165,31 +165,21 @@ original" (interactive)
           (set-window-start w2 s1))))
  (other-window 1))
 
-(defun switch-full-screen (&optional f)
-      (interactive)
-      (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-	    		 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
-      (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-	    		 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
-
 (defun toggle-fullscreen ()
  (interactive)
  (set-frame-parameter nil 'fullscreen 
                       (if (frame-parameter nil 'fullscreen)
                           nil 'fullboth)))
 
-(defun my-frame ()
-  (interactive)
-  (make-frame '((iconName . "zerof - "))))
-
-(defun sync-frames ()
-  "Make two frames show the same thing"
-  (interactive)
-  (let ((buf (current-buffer)))
-    (setq start (window-start))
-    (select-frame (next-frame nil nil))
-    (switch-to-buffer buf)
-    (set-window-start (selected-window) start t)))
-
+(defun el-get-rmdir (package &rest ignored)
+"Just rm -rf the package directory. If it is a symlink, delete it."
+(let* ((pdir (expand-file-name "." (el-get-package-directory package))))
+  (cond ((file-symlink-p pdir)
+         (delete-file pdir))
+        ((file-directory-p pdir)
+         ;; (delete-directory pdir 'recursive)
+         (dired-delete-file pdir 'always))
+        ((file-exists-p pdir)
+         (delete-file pdir)))))
 
 (provide 'rds-defuns)

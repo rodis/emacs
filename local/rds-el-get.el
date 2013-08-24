@@ -14,40 +14,22 @@
 ;; local sources
 (setq el-get-sources '(
 
-  (:name magit
-         :after (lambda () 
-                  (global-set-key (kbd "C-x C-z") 'magit-status)))
-
   (:name backup-each-save
          :description "Backup each savepoint of a file"
          :type emacswiki)
-  
-  (:name key-chord
-         :description "Map pairs of simultaneously pressed keys to commands"
-         :type emacswiki)
 
-  (:name notify
-         :description "Notification manager"
-         :type emacswiki
-         :compile nil)
-  
-  (:name python-mode
-         :type emacsmirror
-         :description "Major mode for editing Python programs"
-         :features (python-mode doctest-mode)
-         :compile nil
-         :load "test/doctest-mode.el"
-         :before (lambda () 
-               (setq py-install-directory "~/.emacs.d/el-get/python-mode"))
-         :post-init (lambda ()
-               (add-to-list 'auto-mode-alist '("\\.py$" . python-mode))
-               (add-to-list 'interpreter-mode-alist '("python" . python-mode))
-               (autoload 'python-mode "python-mode" "Python editing mode." t)))
-
-  (:name emacs-bash-completion
-         :description "Dynamic completion hooks for shell-mode "
-         :type github
-         :pkgname "szermatt/emacs-bash-completion")
+  ; (:name python-mode
+  ;        :type emacsmirror
+  ;        :description "Major mode for editing Python programs"
+  ;        :features (python-mode doctest-mode)
+  ;        :compile nil
+  ;        :load "test/doctest-mode.el"
+  ;        :before (lambda () 
+  ;              (setq py-install-directory "~/.emacs.d/el-get/python-mode"))
+  ;        :post-init (lambda ()
+  ;              (add-to-list 'auto-mode-alist '("\\.py$" . python-mode))
+  ;              (add-to-list 'interpreter-mode-alist '("python" . python-mode))
+  ;              (autoload 'python-mode "python-mode" "Python editing mode." t)))
 
   (:name workgroups
          :description "Window managment for emacs"
@@ -55,53 +37,50 @@
          :pkgname "tlh/workgroups.el"
          :branch "experimental")
 
-  (:name protbuf
-         :description "Protect buffers from accidental killing"
-         :type emacswiki
-         :url "http://www.emacswiki.org/emacs/download/ProtBuf"
-         :build `(,(concat "mv " 
-                          (expand-file-name "protbuf/ProtBuf" el-get-dir) " "
-                          (expand-file-name "protbuf/protbuf.el" el-get-dir))))
+  (:name powerline
+	     :description "Emacs version of the Vim powerline."
+	     :type github
+	     :pkgname "milkypostman/powerline")
 
-  (:name open-next-line
-         :description ""
+ (:name flycheck-color-mode-line
+        :description "An Emacs minor-mode for Flycheck which colors the mode line according to the Flycheck state of the current buffer."
+        :type github
+        :pkgname "syl20bnr/flycheck-color-mode-line")
+
+ (:name emacs-color-theme
+  	   	:description "Emacs color themes inspired by some ST2 color themes"
+     	:type github
+     	:pkgname "owainlewis/emacs-color-themes"
+		:post-init (lambda ()
+			(add-to-list 'custom-theme-load-path "~/.emacs.d/el-get/emacs-color-theme/themes")))
+
+ (:name base16-themes
+ 		:description "Base16 provides carefully chosen set of sixteen colors suitable for a wide range of applications."
+     	:website "http://chriskempson.github.io/base16/"
+     	:type github
+      	:pkgname "neil477/base16-emacs"
+     	:post-init (add-to-list 'custom-theme-load-path "~/.emacs.d/el-get/base16-themes"))
+
+ (:name xterm-title
+  	  	 :description "Update xterm titles"
+  	     :type http
+  	     :url "http://www.splode.com/~friedman/software/emacs-lisp/src/xterm-title.el")
+  
+ (:name xterm-frobs
+  	   	 :description "manipulate xterm when running emacs in tty mode"
+  	   	 :type http
+  	   	 :url "http://www.splode.com/~friedman/software/emacs-lisp/src/xterm-frobs.el")
+  
+ (:name pbcopy
+  	  	 :description "Mac os x clipboard integration"
+  	     :type http
+  	     :url "https://gist.github.com/raw/1023272/7b0db196d1184e3a2f43b31c601c415f1d41830f/pbcopy.el")
+
+ (:name python24
+         :description "Python's flying circus support for Emacs (24.x)"
+         ; :builtin "Emacs 24.3"
          :type http
-         :url "https://raw.github.com/gabrielelanaro/emacs-for-python/master/extensions/open-next-line.el")
-
-  (:name flymake
-         :description "Continuous syntax checking for Emacs"
-         :type github
-         :pkgname "illusori/emacs-flymake")
-
-  (:name win-switch
-         :description "Navigating Emacs windows"
-         :type http
-         :url "https://raw.github.com/leoncamel/emacs-utils/5b345e163f026070fa6014171f7b83f80faf484d/win-switch/win-switch.el")
-
-  (:name color-theme-solarized
-         :description "\Emacs highlighting using Ethan Schoonover's Solarized 
-                       color scheme"
-         :type github
-         :pkgname "sellout/emacs-color-theme-solarized"
-         :depends color-theme
-         :prepare (progn
-                    (autoload 'color-theme-solarized-light 
-                      "color-theme-solarized"
-                      "color-theme: solarized-light" t)
-                    (autoload 'color-theme-solarized-dark 
-                      "color-theme-solarized"
-                      "color-theme: solarized-dark" t)))
-
-  (:name autopair
-         :description "Automagically pair braces and quotes"
-         :type github
-         :pkgname "m2ym/autopair-el")
-
-  (:name deft
-         :features ())
-
-  (:name go-mode
-         :features ())
+         :url "http://repo.or.cz/w/emacs.git/blob_plain/refs/heads/emacs-24:/lisp/progmodes/python.el")
 
 ))
 
@@ -110,19 +89,17 @@
        '(
          el-get
          diminish
-         org-mode
          dired+
-         anything
          popwin
          auto-complete
-         goto-last-change
-         go-mode
-         js2-mode
+		 helm
+		 win-switch
+		 flycheck
+		 expand-region
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
 
 (el-get 'sync my-packages)
-
 
 (provide 'rds-el-get)

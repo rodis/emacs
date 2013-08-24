@@ -8,9 +8,7 @@
         ("*Browse code*")
 ))
 
-(setq anything-samewindow nil)
-(push '("\\*anything[[:blank:]]*[a-zA-Z -]*\\*" :height 20 :regexp t) 
-      popwin:special-display-config)
-
-
+(setq helm-full-frame nil)
+(push '("^\*helm .+\*$" :regexp t) popwin:special-display-config)
+(push '("^\*helm-.+\*$" :regexp t) popwin:special-display-config)
 (provide 'rds-popwin)

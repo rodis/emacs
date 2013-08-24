@@ -16,7 +16,7 @@
                       (file-name-directory buffer-file-name))))
       
       ;; (list "~/.emacs.d/python-bin/pycheckers"  (list local-file))
-      (list "/home/rods/.emacs.d/python-bin/pyflakes" (list local-file))
+      (list "/Users/rods/.emacs.d/python-bin/pyflakes" (list local-file))
 ))
 
    (add-to-list 'flymake-allowed-file-name-masks
@@ -27,7 +27,7 @@
 ;; I want my copies in the system temp dir.
 (setq flymake-run-in-place nil)
 ;; This lets me say where my temp dir is.
-(setq temporary-file-directory "~/.emacs.d/tmp/")
+(setq temporary-file-directory "/Users/rods/.emacs.d/tmp/")
 ;; I want to see at most the first 4 errors for a line.
 (setq flymake-number-of-errors-to-display 4)
 

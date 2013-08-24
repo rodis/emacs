@@ -1,8 +1,6 @@
 ;;; rds-programming.el --- Programming stuff
 
-(require 'rds-python-init)
-(require 'rds-javascript)
-;; (require 'w3m-load)
+; (require 'rds-python-init)
 
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 (add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
