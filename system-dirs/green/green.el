@@ -1,5 +1,0 @@
-(add-to-list 'default-frame-alist '(font . "Liberation Mono-9"))
-(add-to-list 'default-frame-alist '(width . 79))
-(add-to-list 'default-frame-alist '(height . 84))
-(add-to-list 'default-frame-alist '(top . 0))
-(add-to-list 'default-frame-alist '(left . 0))

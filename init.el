@@ -25,7 +25,7 @@
 (setq utils-dir (expand-file-name "utils" dotfiles-dir))
 (setq system-dirs (expand-file-name "system-dirs" dotfiles-dir))
 (setq system-specific-dir (expand-file-name system-name system-dirs))
-
+(setq config-dir (expand-file-name "config-files" dotfiles-dir))
 (load-file (expand-file-name "rds-paths.el" local-dir))
 
 

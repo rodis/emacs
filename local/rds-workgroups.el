@@ -1,7 +1,8 @@
 (require 'workgroups)
 
-(setq wg-default-session-file (concat system-specific-dir 
-                                      "/" "default-workgroups-session"))
+(setq wg-default-session-file
+	(expand-file-name "default-workgroups-session" config-dir))
+
 (setq wg-morph-on nil)
 (setq wg-use-faces t)
 (setq wg-emacs-exit-save-behavior nil)
