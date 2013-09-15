@@ -18,19 +18,6 @@
          :description "Backup each savepoint of a file"
          :type emacswiki)
 
-  ; (:name python-mode
-  ;        :type emacsmirror
-  ;        :description "Major mode for editing Python programs"
-  ;        :features (python-mode doctest-mode)
-  ;        :compile nil
-  ;        :load "test/doctest-mode.el"
-  ;        :before (lambda () 
-  ;              (setq py-install-directory "~/.emacs.d/el-get/python-mode"))
-  ;        :post-init (lambda ()
-  ;              (add-to-list 'auto-mode-alist '("\\.py$" . python-mode))
-  ;              (add-to-list 'interpreter-mode-alist '("python" . python-mode))
-  ;              (autoload 'python-mode "python-mode" "Python editing mode." t)))
-
   (:name workgroups
          :description "Window managment for emacs"
          :type github
