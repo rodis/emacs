@@ -64,7 +64,8 @@
  (:name xterm-title
   	  	 :description "Update xterm titles"
   	     :type http
-  	     :url "http://www.splode.com/~friedman/software/emacs-lisp/src/xterm-title.el")
+  	     :url "https://gist.github.com/rodis/8212a657f2c82ce0f8cf/raw"
+		 :localname "xterm-title.el")
   
  (:name xterm-frobs
   	   	 :description "manipulate xterm when running emacs in tty mode"
