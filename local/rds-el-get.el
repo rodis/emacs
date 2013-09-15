@@ -22,42 +22,49 @@
 	     :description "Window managment for emacs"
 	     :type github
 	     :pkgname "tlh/workgroups.el"
-	     :branch "experimental")
+	     :branch "experimental"
+		 :shallow t)
 
 	(:name popup
 	    :website "https://github.com/auto-complete/popup-el"
 	    :description "Visual Popup Interface Library for Emacs"
 	    :type github
 	    :pkgname "auto-complete/popup-el"
-	    :submodule nil)
+	    :submodule nil
+		:shallow t)
 
 	(:name auto-complete
 	    :website "https://github.com/auto-complete/auto-complete"
 	    :description "The most intelligent auto-completion extension."
 	    :type github
 	    :pkgname "auto-complete/auto-complete"
-	    :submodule nil)
+	    :submodule nil
+		:shallow t)
 
 	(:name fuzzy
 	    :website "https://github.com/auto-complete/fuzzy-el"
 	    :description "Fuzzy matching utilities for GNU Emacs"
 	    :type github
-	    :pkgname "auto-complete/fuzzy-el")
+	    :pkgname "auto-complete/fuzzy-el"
+		:shallow t)
 		
 	(:name powerline
 	     :description "Emacs version of the Vim powerline."
 	     :type github
-	     :pkgname "milkypostman/powerline")
+	     :pkgname "milkypostman/powerline"
+		 :shallow t)
 
 	(:name flycheck-color-mode-line
 	      :description "An Emacs minor-mode for Flycheck which colors the mode line according to the Flycheck state of the current buffer."
 	      :type github
-	      :pkgname "syl20bnr/flycheck-color-mode-line")
+	      :pkgname "syl20bnr/flycheck-color-mode-line"
+		  :shallow t)
 
 	(:name emacs-color-theme
 		   	:description "Emacs color themes inspired by some ST2 color themes"
 	   	:type github
 	   	:pkgname "rodis/emacs-color-themes"
+		:shallow t
 		:post-init (lambda ()
 			(add-to-list 'custom-theme-load-path "~/.emacs.d/el-get/emacs-color-theme/themes")))
 
@@ -66,13 +73,15 @@
 	   	:website "http://chriskempson.github.io/base16/"
 	   	:type github
 	    	:pkgname "neil477/base16-emacs"
+		:shallow t
 	   	:post-init (add-to-list 'custom-theme-load-path "~/.emacs.d/el-get/base16-themes"))
 
 	(:name xterm-title
-		  	 :description "Update xterm titles"
-		     :type http
-		     :url "https://gist.github.com/rodis/8212a657f2c82ce0f8cf/raw"
-		 :localname "xterm-title.el")
+		  	:description "Update xterm titles"
+		    :type http
+		    :url "https://gist.github.com/rodis/8212a657f2c82ce0f8cf/raw"
+		 	:localname "xterm-title.el"
+			:shallow t)
 
 	(:name xterm-frobs
 		   	 :description "manipulate xterm when running emacs in tty mode"
@@ -89,6 +98,14 @@
 	       ; :builtin "Emacs 24.3"
 	       :type http
 	       :url "http://repo.or.cz/w/emacs.git/blob_plain/refs/heads/emacs-24:/lisp/progmodes/python.el")
+		   
+   (:name helm
+          :description "Emacs incremental and narrowing framework"
+          :type github
+          :pkgname "emacs-helm/helm"
+          :compile nil
+          :features helm-config
+          :shallow t)
 ))
 
 (setq my-packages
