@@ -50,7 +50,7 @@
  (:name emacs-color-theme
   	   	:description "Emacs color themes inspired by some ST2 color themes"
      	:type github
-     	:pkgname "owainlewis/emacs-color-themes"
+     	:pkgname "rodis/emacs-color-themes"
 		:post-init (lambda ()
 			(add-to-list 'custom-theme-load-path "~/.emacs.d/el-get/emacs-color-theme/themes")))
 
