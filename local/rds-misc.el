@@ -81,9 +81,6 @@
 
 (setq auto-save-list-file-prefix (concat cache-dir "/auto-save-list/saves-" ))
 
-(load "server")
-(unless (server-running-p) (server-start))
-
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (require 'pbcopy)
