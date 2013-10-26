@@ -106,6 +106,14 @@
           :compile nil
           :features helm-config
           :shallow t)
+
+   (:name epl
+          :description "Emacs Package Library"
+          :type github
+          :pkgname "cask/epl"
+          :compile nil
+          :shallow t)
+
 ))
 
 (setq my-packages
