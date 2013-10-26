@@ -23,9 +23,9 @@
 (require 'rds-programming)
 (require 'rds-bindings)
 (require 'rds-expand-region)
+(require 'rds-undo-tree)
 
-
-(setq custom-file 
+(setq custom-file
       (expand-file-name "rds-custom.el" local-dir))
 (load custom-file 'noerror)
 

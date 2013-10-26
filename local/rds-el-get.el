@@ -47,7 +47,7 @@
 	    :type github
 	    :pkgname "auto-complete/fuzzy-el"
 		:shallow t)
-		
+
 	(:name powerline
 	     :description "Emacs version of the Vim powerline."
 	     :type github
@@ -98,7 +98,7 @@
 	       ; :builtin "Emacs 24.3"
 	       :type http
 	       :url "http://repo.or.cz/w/emacs.git/blob_plain/refs/heads/emacs-24:/lisp/progmodes/python.el")
-		   
+
    (:name helm
           :description "Emacs incremental and narrowing framework"
           :type github
@@ -120,6 +120,7 @@
 		 win-switch
 		 flycheck
 		 expand-region
+         undo-tree
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
