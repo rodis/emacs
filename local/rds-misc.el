@@ -3,14 +3,17 @@
 ;; emacs breakes hard link (http://kb.iu.edu/data/acxl.html)
 (setq backup-by-copying-when-linked t)
 
-;; set window title
-(setq frame-title-format '(buffer-file-name "%f" ("%b")))
-(when (and (not window-system)
-	(string-match "^xterm" (getenv "TERM")))
-	(require 'xterm-title)
-    (xterm-title-mode 1))
+ (defun xterm-title-update ()
+     (interactive)
+     (send-string-to-terminal (concat "\033]1; " (buffer-name) "\007"))
+     (if buffer-file-name
+         (send-string-to-terminal (concat "\033]2; " (buffer-file-name) "\007"))
+         (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))
+ ))
 
-;; show keystrokes in minibuffer early
+ (add-hook 'post-command-hook 'xterm-title-update)
+
+; show keystrokes in minibuffer early
 (setq echo-keystrokes 0.1)
 
 ;; show size in minibuffer
@@ -19,15 +22,15 @@
 ;; get rid of the menu bar
 (menu-bar-mode -1)
 
-;; show column number in minibuffer 
+;; show column number in minibuffer
 (setq column-number-mode t)
 
 ;; if at the beginning of line C-k includes the newline chars
 (setq kill-whole-line t)
- 
+
 ;; no message at startup
 (setq inhibit-startup-message t)
- 
+
 ;; TAB => 4*'\b'
 (setq default-tab-width 4)
 
@@ -83,7 +86,7 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(require 'pbcopy)
-(turn-on-pbcopy)
+;;(require 'pbcopy)
+;;(turn-on-pbcopy)
 
 (provide 'rds-misc)
