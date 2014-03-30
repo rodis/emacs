@@ -89,6 +89,11 @@
            :description "On-the-fly syntax checking extension"
            :depends (s dash cl-lib f pkg-info))
 
+	(:name win-switch
+           :description "Windows navigation library"
+           :url "http://www.emacswiki.org/emacs/download/win-switch.el"
+           :type emacswiki)
+
 ))
 
 (setq my-packages
