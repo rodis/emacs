@@ -87,7 +87,8 @@
            :type github
            :pkgname "lunaryorn/flycheck"
            :description "On-the-fly syntax checking extension"
-           :depends (s dash cl-lib f pkg-info))
+           :depends (s dash cl-lib f pkg-info)
+           :shallow t)
 
 	(:name win-switch
            :description "Windows navigation library"
