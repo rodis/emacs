@@ -106,7 +106,6 @@
          popwin
          auto-complete
          helm
-         win-switch
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
