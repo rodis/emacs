@@ -83,6 +83,12 @@
            :features helm-config
            :shallow t)
 
+    (:name ergoemacs-mode
+           :description ""
+           :type github
+           :pkgname "ergoemacs/ergoemacs-mode"
+           :shallow t)
+
     (:name flycheck
            :type github
            :pkgname "lunaryorn/flycheck"
@@ -113,4 +119,4 @@
 (el-get 'sync my-packages)
 
 (provide 'rds-elget)
-;;; rds-el-get.el ends here
+;;; rds-elget.el ends here
