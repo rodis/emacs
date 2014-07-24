@@ -112,6 +112,7 @@
          popwin
          auto-complete
          helm
+         expand-region
          )
 
        (mapcar 'el-get-source-name el-get-sources)))

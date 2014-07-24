@@ -15,6 +15,7 @@
 (require 'rds-flycheck)
 (require 'rds-powerline)
 (require 'rds-ergoemacs)
+(require 'rds-expand-region)
 (require 'rds-backup-each-save.el)
 (require 'rds-diminish)
 (require 'rds-ibuffer)
