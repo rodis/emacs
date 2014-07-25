@@ -101,6 +101,14 @@
            :url "http://www.emacswiki.org/emacs/download/win-switch.el"
            :type emacswiki)
 
+    (:name monokai
+           :type github
+           :pkgname "oneKelvinSmith/monokai-emacs"
+           :description "Monokai is a port of the popular TextMate theme Monokai"
+           :shallow t
+           :post-init (progn
+                        (add-to-list 'custom-theme-load-path
+                                     "~/.emacs.d/el-get/monokai")))
 ))
 
 (setq my-packages
