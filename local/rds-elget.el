@@ -119,6 +119,7 @@
          auto-complete
          helm
          expand-region
+         markdown-mode
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
