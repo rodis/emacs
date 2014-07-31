@@ -1,5 +1,8 @@
 ;;; rds-el-get --- Package Manager
 
+;;; Commentary:
+
+;;; Code:
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (setq el-get-master-branch t)
@@ -17,13 +20,6 @@
            :description "Backup each savepoint of a file"
            :url "http://www.emacswiki.org/emacs/download/backup-each-save.el"
            :type emacswiki)
-
-	(:name workgroups
-           :description "Window managment for emacs"
-           :type github
-           :pkgname "tlh/workgroups.el"
-           :branch "experimental"
-           :shallow t)
 
 	(:name popup
            :website "https://github.com/auto-complete/popup-el"
@@ -109,6 +105,8 @@
            :post-init (progn
                         (add-to-list 'custom-theme-load-path
                                      "~/.emacs.d/el-get/monokai")))
+    (:name perspective
+           :after (progn (persp-mode)))
 ))
 
 (setq my-packages

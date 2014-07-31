@@ -8,7 +8,6 @@
 (require 'rds-autocomplete)
 (require 'rds-dired)
 (require 'rds-win-switch)
-(require 'rds-workgroups)
 (require 'rds-uniquify)
 (require 'rds-popwin)
 (require 'rds-helm)

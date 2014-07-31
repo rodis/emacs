@@ -23,6 +23,7 @@
  '(diredp-write-priv ((t (:foreground "Orchid"))))
  '(flycheck-color-mode-line-error-face ((t (:inherit flycheck-fringe-warning :background "red" :foreground "#ffffff" :weight normal))))
  '(flycheck-color-mode-line-warning-face ((t (:inherit flycheck-fringe-warning :background "#859900" :foreground "#ffffff" :weight normal))))
+ '(persp-selected-face ((t (:foreground "#5FFFFF" :weight bold))))
  '(powerline-active1 ((t (:inherit mode-line :background "grey22" :foreground "white"))))
  '(powerline-active2 ((t (:inherit mode-line :background "grey40" :foreground "white"))))
  '(vertical-border ((t (:background "black" :foreground "black")))))
