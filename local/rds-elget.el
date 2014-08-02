@@ -105,6 +105,12 @@
            :post-init (progn
                         (add-to-list 'custom-theme-load-path
                                      "~/.emacs.d/el-get/monokai")))
+
+    (:name expand-region
+           :after (progn
+                    (global-set-key [?\M-9] 'er/expand-region)
+                    (setq expand-region-contract-fast-key "0")
+                    (setq expand-region-reset-fast-key "-")))
 ;;     (:name perspective
 ;;            :after (progn (persp-mode)))
 ))
