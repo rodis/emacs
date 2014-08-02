@@ -105,8 +105,8 @@
            :post-init (progn
                         (add-to-list 'custom-theme-load-path
                                      "~/.emacs.d/el-get/monokai")))
-    (:name perspective
-           :after (progn (persp-mode)))
+;;     (:name perspective
+;;            :after (progn (persp-mode)))
 ))
 
 (setq my-packages
@@ -120,6 +120,7 @@
          helm
          expand-region
          markdown-mode
+         perspective
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
