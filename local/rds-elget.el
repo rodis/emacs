@@ -126,5 +126,8 @@
 
 (el-get 'sync my-packages)
 
+(setq el-get-git-shallow-clone t)
+
+
 (provide 'rds-elget)
 ;;; rds-elget.el ends here
