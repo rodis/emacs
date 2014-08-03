@@ -23,31 +23,26 @@
 	(:name popup
            :type github
            :pkgname "auto-complete/popup-el"
-           :submodule nil
-           :shallow t)
+           :submodule nil)
 
 	(:name auto-complete
            :type github
            :pkgname "auto-complete/auto-complete"
-           :submodule nil
-           :shallow t)
+           :submodule nil)
 
 	(:name fuzzy
            :type github
-           :pkgname "auto-complete/fuzzy-el"
-           :shallow t)
+           :pkgname "auto-complete/fuzzy-el")
 
 	(:name powerline
            :type github
            :pkgname "milkypostman/powerline"
            :compile nil
-           :autoloads nil
-           :shallow t)
+           :autoloads nil)
 
 	(:name flycheck-color-mode-line
            :type github
-           :pkgname "syl20bnr/flycheck-color-mode-line"
-           :shallow t)
+           :pkgname "syl20bnr/flycheck-color-mode-line")
 
 	(:name python24
 	       :type http
@@ -57,19 +52,16 @@
            :type github
            :pkgname "emacs-helm/helm"
            :compile nil
-           :features helm-config
-           :shallow t)
+           :features helm-config)
 
     (:name ergoemacs-mode
            :type github
-           :pkgname "ergoemacs/ergoemacs-mode"
-           :shallow t)
+           :pkgname "ergoemacs/ergoemacs-mode")
 
     (:name flycheck
            :type github
            :pkgname "lunaryorn/flycheck"
-           :depends (s dash cl-lib f pkg-info)
-           :shallow t)
+           :depends (s dash cl-lib f pkg-info))
 
 	(:name win-switch
            :url "http://www.emacswiki.org/emacs/download/win-switch.el"
@@ -78,7 +70,6 @@
     (:name monokai
            :type github
            :pkgname "oneKelvinSmith/monokai-emacs"
-           :shallow t
            :before (progn
                      (add-to-list 'custom-theme-load-path
                                   "~/.emacs.d/el-get/monokai"))
