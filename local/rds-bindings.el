@@ -15,8 +15,8 @@
 ;; duplicate a line and comment the first
 ;; (global-set-key (kbd "C-c c")(lambda()(interactive)(djcb-duplicate-line t)))
 
-(global-set-key (kbd "C-x C-c") 
-                 (lambda () (interactive) 
+(global-set-key (kbd "C-x C-c")
+                 (lambda () (interactive)
                    (if (y-or-n-p "Quit Emacs? ") (save-buffers-kill-emacs))))
 
 (global-set-key (kbd "C-c r") 'revert-buffer)
@@ -41,8 +41,8 @@
 ;;(global-set-key (kbd "<f5>") ')  anything-config use this as prefix
 (global-set-key (kbd "<f6>") 'ido-find-file)
 ; (global-set-key (kbd "<f7>") 'anything)
-(global-set-key (kbd "<f7>") 'helm-mini)
-(global-set-key (kbd "<f8>") 'ibuffer)
+(global-set-key (kbd "<f7>") 'helm-find-files)
+(global-set-key (kbd "<f8>") 'helm-buffers-list)
 (global-set-key (kbd "<f9>") 'ido-dired)
 (global-set-key (kbd "<f10>") 'wg-save-wconfig)
 (global-set-key (kbd "<f11>") 'wg-restore-saved-wconfig)
