@@ -15,7 +15,6 @@
 (require 'rds-powerline)
 (require 'rds-ergoemacs)
 (require 'rds-backup-each-save.el)
-(require 'rds-colortheme)
 (require 'rds-diminish)
 (require 'rds-ibuffer)
 (require 'rds-programming)

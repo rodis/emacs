@@ -102,9 +102,11 @@
            :pkgname "oneKelvinSmith/monokai-emacs"
            :description "Monokai is a port of the popular TextMate theme Monokai"
            :shallow t
-           :post-init (progn
-                        (add-to-list 'custom-theme-load-path
-                                     "~/.emacs.d/el-get/monokai")))
+           :before (progn
+                     (add-to-list 'custom-theme-load-path
+                                  "~/.emacs.d/el-get/monokai"))
+           :after (progn
+                    (load-theme 'monokai :no-confirm)))
 
     (:name expand-region
            :after (progn
