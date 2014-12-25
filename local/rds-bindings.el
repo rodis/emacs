@@ -23,7 +23,7 @@
 (global-set-key (kbd "C-x b") 'anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-x C-j") 'dired-jump)
-
+(global-set-key (kbd "M-x") 'helm-M-x)
 ;; Window switching. (C-x o goes to the next window)
 ;; (windmove-default-keybindings 'meta) ;; Meta+direction
 ;; moving left from the leftmost window in a frame will find the rightmost one

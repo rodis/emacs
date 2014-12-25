@@ -3,6 +3,7 @@
 ;;; Code:
 (require 'helm-config)
 (setq helm-ff-auto-update-initial-value t)
+(setq helm-M-x-requires-pattern nil)
 
 (require 'powerline)
 
