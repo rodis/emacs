@@ -95,6 +95,7 @@
          expand-region
          markdown-mode
          perspective
+         magit
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
