@@ -48,12 +48,6 @@
 	       :type http
 	       :url "http://repo.or.cz/w/emacs.git/blob_plain/refs/heads/emacs-24:/lisp/progmodes/python.el")
 
-;;    (:name helm
-;;           :type github
-;;           :pkgname "emacs-helm/helm"
-;;           :compile nil
-;;           :features helm-config)
-
     (:name ergoemacs-mode
            :type github
            :pkgname "ergoemacs/ergoemacs-mode")
@@ -85,6 +79,13 @@
                     (global-set-key [?\M-9] 'er/expand-region)
                     (setq expand-region-contract-fast-key "0")
                     (setq expand-region-reset-fast-key "-")))
+
+    (:name let-alist
+           :website "http://elpa.gnu.org/packages/let-alist.html"
+           :description "Easily let-bind values of an assoc-list by their names"
+           :type elpa
+           :builtin "25")
+
 ))
 
 (setq my-packages
@@ -95,10 +96,8 @@
          dired+
          popwin
          auto-complete
-         ;;helm
          expand-region
          markdown-mode
-         perspective
          magit
          f
          projectile
