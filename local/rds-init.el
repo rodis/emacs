@@ -10,7 +10,6 @@
 (require 'rds-win-switch)
 (require 'rds-uniquify)
 (require 'rds-popwin)
-(require 'rds-helm)
 (require 'rds-flycheck)
 (require 'rds-powerline)
 (require 'rds-ergoemacs)
@@ -19,7 +18,7 @@
 (require 'rds-ibuffer)
 (require 'rds-programming)
 (require 'rds-bindings)
-(require 'rds-perspective)
+(require 'rds-projectile)
 
 (setq custom-file (expand-file-name "rds-custom.el" local-dir))
 (load custom-file 'noerror)

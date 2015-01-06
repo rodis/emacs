@@ -1,5 +1,8 @@
-;;; rds-yasnippet.el --- Yasnippet 
+;;; rds-yasnippet.el --- Yasnippet
 
+;;; Commentary:
+
+;;; Code:
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory (concat utils-dir "/snippets"))
@@ -8,3 +11,4 @@
 
 
 (provide 'rds-yasnippet)
+;;; rds-yasnippet.el ends here

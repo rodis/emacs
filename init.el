@@ -17,7 +17,7 @@
 ;; ----------------------------------------------------------------------------
 ;; Global variables
 ;; ----------------------------------------------------------------------------
-(setq dotfiles-dir 
+(setq dotfiles-dir
       (file-name-directory (or (buffer-file-name) load-file-name)))
 (setq local-dir (expand-file-name "local" dotfiles-dir))
 (setq vendor-dir (expand-file-name "vendor" dotfiles-dir))

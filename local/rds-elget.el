@@ -48,15 +48,19 @@
 	       :type http
 	       :url "http://repo.or.cz/w/emacs.git/blob_plain/refs/heads/emacs-24:/lisp/progmodes/python.el")
 
-    (:name helm
-           :type github
-           :pkgname "emacs-helm/helm"
-           :compile nil
-           :features helm-config)
+;;    (:name helm
+;;           :type github
+;;           :pkgname "emacs-helm/helm"
+;;           :compile nil
+;;           :features helm-config)
 
     (:name ergoemacs-mode
            :type github
            :pkgname "ergoemacs/ergoemacs-mode")
+
+    (:name flx-ido
+           :type github
+           :pkgname "lewang/flx")
 
     (:name flycheck
            :type github
@@ -91,11 +95,14 @@
          dired+
          popwin
          auto-complete
-         helm
+         ;;helm
          expand-region
          markdown-mode
          perspective
          magit
+         f
+         projectile
+         ido-vertical-mode
          )
 
        (mapcar 'el-get-source-name el-get-sources)))

@@ -1,8 +1,11 @@
-;;; rds-uniquify --- 
+;;; rds-uniquify --- uniquify conf
 
+;;; Commentary:
+
+;;; Code:
 (require 'uniquify)
 
-(setq 
+(setq
   uniquify-buffer-name-style 'reverse
   uniquify-separator "|"
   uniquify-after-kill-buffer-p t
@@ -11,3 +14,4 @@
 
 
 (provide 'rds-uniquify)
+;;; rds-uniquify.el ends here

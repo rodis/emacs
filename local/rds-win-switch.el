@@ -1,3 +1,8 @@
+;;; package --- win-switch conf
+
+;;; Commentary:
+
+;;; Code:
 (require 'win-switch)
 
 (global-set-key (kbd "<f3>") 'win-switch-dispatch)
@@ -13,3 +18,4 @@
 
 
 (provide 'rds-win-switch)
+;;; rds-win-switch.el ends here
