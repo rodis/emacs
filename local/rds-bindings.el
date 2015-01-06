@@ -22,21 +22,16 @@
                  (lambda () (interactive)
                    (if (y-or-n-p "Quit Emacs? ") (save-buffers-kill-emacs))))
 
-(global-set-key (kbd "C-c r") 'revert-buffer)
-(global-set-key (kbd "C-x b") 'anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-x C-j") 'dired-jump)
+
+;; Fix ergomacs issue where forward-word is not binded to M-o
+(global-set-key (kbd "M-o") 'forward-word)
 
 (global-set-key (kbd "<f6>") 'ido-find-file)
 (global-set-key (kbd "<f7>") 'projectile-find-file)
 (global-set-key (kbd "<f8>") 'ido-switch-buffer)
 (global-set-key (kbd "<f9>") 'ido-dired)
-
-(global-unset-key [left])
-(global-unset-key [up])
-(global-unset-key [right])
-(global-unset-key [down])
-
 
 (provide 'rds-bindings)
 ;;; rds-bindings.el ends here
