@@ -80,6 +80,11 @@
                     (setq expand-region-contract-fast-key "0")
                     (setq expand-region-reset-fast-key "-")))
 
+    (:name smart-mode-line
+           :after (progn
+                    (setq sml/no-confirm-load-theme t)
+                    (sml/setup)))
+
     (:name let-alist
            :website "http://elpa.gnu.org/packages/let-alist.html"
            :description "Easily let-bind values of an assoc-list by their names"

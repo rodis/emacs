@@ -1,5 +1,8 @@
 ;;; rds-init.el --- Load all custom library
 
+;;; Commentary:
+
+;;; Code:
 (require 'rds-elget)
 (require 'rds-misc)
 (require 'rds-defuns)
@@ -11,7 +14,6 @@
 (require 'rds-uniquify)
 (require 'rds-popwin)
 (require 'rds-flycheck)
-(require 'rds-powerline)
 (require 'rds-ergoemacs)
 (require 'rds-backup-each-save.el)
 (require 'rds-diminish)
