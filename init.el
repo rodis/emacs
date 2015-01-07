@@ -1,5 +1,8 @@
 ;;; init.el --- Where all the magic begins
 
+;;; Commentary:
+
+;;; Code:
 ;; ----------------------------------------------------------------------------
 ;; Turn off early in startup to avoid momentary display
 ;; ----------------------------------------------------------------------------
@@ -30,3 +33,4 @@
 
 
 (require 'rds-init)
+;;; init.el ends here
