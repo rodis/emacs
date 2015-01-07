@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#epylint "$1" 2>/dev/null
-#$VIRTUAL_ENV/python -c 'import sys,pylint.epylint;pylint.epylint.lint('\"$1\"')' 2>/dev/null
-pyflakes "$1"
-pep8 --repeat "$1"
-true
