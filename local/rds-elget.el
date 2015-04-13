@@ -111,6 +111,7 @@
          magit
          f
          ido-vertical-mode
+         smex
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
