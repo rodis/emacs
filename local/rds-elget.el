@@ -80,6 +80,11 @@
                     (setq expand-region-contract-fast-key "0")
                     (setq expand-region-reset-fast-key "-")))
 
+   (:name smex
+          :after (progn
+                   (global-set-key (kbd "M-x") 'smex)
+                   (global-set-key (kbd "M-X") 'smex-major-mode-commands)))
+
     (:name smart-mode-line
            :after (progn
                     (setq sml/no-confirm-load-theme t)
@@ -111,7 +116,7 @@
          magit
          f
          ido-vertical-mode
-         smex
+         guide-key
          )
 
        (mapcar 'el-get-source-name el-get-sources)))
