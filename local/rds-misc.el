@@ -1,5 +1,10 @@
 ;;; rds-misc.el --- Miscellaneous settings
 
+
+;;; Commentary:
+
+;;; Code:
+
 ;; emacs breakes hard link (http://kb.iu.edu/data/acxl.html)
 (setq backup-by-copying-when-linked t)
 
@@ -86,7 +91,5 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;;(require 'pbcopy)
-;;(turn-on-pbcopy)
 
 (provide 'rds-misc)
