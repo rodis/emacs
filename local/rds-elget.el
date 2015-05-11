@@ -95,12 +95,6 @@
                     (projectile-global-mode)
                     (setq projectile-mode-line
                           '(:eval (format " P[%s]" (projectile-project-name))))))
-    (:name let-alist
-           :website "http://elpa.gnu.org/packages/let-alist.html"
-           :description "Easily let-bind values of an assoc-list by their names"
-           :type elpa
-           :builtin "25")
-
 ))
 
 (setq my-packages
@@ -110,6 +104,7 @@
          diminish
          dired+
          popwin
+         let-alist
          auto-complete
          expand-region
          markdown-mode
